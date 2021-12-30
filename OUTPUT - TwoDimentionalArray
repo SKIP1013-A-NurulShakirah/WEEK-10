@@ -1,0 +1,41 @@
+Enter sales per line : 
+10
+20
+30
+40
+50
+60
+70
+80
+90
+
+For i = 0 and y = 0
+Values for sales are : 10
+
+For i = 0 and y = 1
+Values for sales are : 20
+
+For i = 0 and y = 2
+Values for sales are : 30
+
+For i = 1 and y = 0
+Values for sales are : 40
+
+For i = 1 and y = 1
+Values for sales are : 50
+
+For i = 1 and y = 2
+Values for sales are : 60
+
+For i = 2 and y = 0
+Values for sales are : 70
+
+For i = 2 and y = 1
+Values for sales are : 80
+
+For i = 2 and y = 2
+Values for sales are : 90
+
+The sum of sales is 450
+
+The average of sales is 150
