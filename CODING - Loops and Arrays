@@ -1,0 +1,107 @@
+package inclassexercises;
+
+import java.util.Scanner;
+
+public class LoopsAndArrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+//  1. Initializing an array to a specific value : 
+		
+//     (to initialize every component of array 'sale' with a value of 10.00)
+		
+		double[] sale = new double[10];
+		
+		for (int i=0; i<sale.length; i++) 
+		{
+			sale[i] = 10.00;
+			System.out.println(sale[i]);
+		}
+		
+		
+		
+//  2. Input data into array : 
+		
+		System.out.println("\n\nEnter the 10 numbers : ");
+		
+		int[] num = new int[10];
+		
+		for (int i=0; i<num.length; i++) 
+		{
+			num[i] = sc.nextInt();
+		}
+		
+		for (int i=0; i<num.length; i++)
+		{
+		System.out.println("The numbers are : " +num[i]);
+		}
+		
+		
+//	3. Printing an array :
+		
+		System.out.println("\n\nPrint the list : ");
+		
+		int[] list = new int[10];
+		
+		for (int i=0; i<list.length; i++)
+		{
+			System.out.print(list[i] + " ");
+		}
+		System.out.println("");
+			
+			
+//  4. Find the sum and average of an array : 
+			
+		double[] mark = new double[10];
+		double sum=0, avg;
+		
+		System.out.println("\n\nEnter the 10 marks : ");
+		
+		for (int i=0; i<mark.length; i++)
+		{
+			mark[i] = sc.nextDouble();
+			sum = sum + mark[i];
+		}
+		System.out.println("The sum is " +sum);
+		
+		if  (mark.length != 0)
+		{
+			avg = sum / mark.length;
+			System.out.printf("The average is %.2f", avg);
+		}
+		
+		else 
+		{
+			avg = 0.0;
+			System.out.printf("The average is %.2f", avg);
+		}
+		
+//  5. Determining the largest element in the array : 
+		
+		System.out.println("\n\nEnter the prices : ");
+		
+		double[] price = new double[10];
+		double largestPrice;
+		int i=0, max_i=0;
+		
+		for (i=0; i<price.length; i++)
+		{
+			price[i] = sc.nextDouble();
+		}
+		
+		for (i=0; i<price.length; i++)
+		{
+			if (price[max_i] < price[i])
+				max_i = i;
+			largestPrice = price[max_i];
+		}
+		
+		
+		
+
+	}
+
+}
